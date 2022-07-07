@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="/css/site.css">
     <style>
-        html{
+        html {
             background-color: crimson;
         }
-        nav a{
+
+        nav a {
             color: darkred;
         }
-        nav a:hover{
+
+        nav a:hover {
             color: darkturquoise;
         }
-        nav ul{
+
+        nav ul {
             background-color: lightgray;
         }
-        nav ul li:hover{
+
+        nav ul li:hover {
             background-color: black;
+        }
+
+        #limpar{
+            background-color: white;
+            border-radius: 4px;
+            border: 1px solid gray;
+            padding: 2px ;
+        }
+        #enviar{
+            background-color: lightcoral;
+            border-radius: 4px;
+            border: 1px;
+            padding: ;
         }
     </style>
 </head>
+
 <body>
     <header>
         <img src="/img/contat.png" alt="">
@@ -40,10 +59,32 @@
 
     <main>
         <h2>Entre em contato</h2>
+        <form action="mailto:mateusgoettems@gmail.com?subject=Contato via site pessoal" method="post"
+            enctype="text/plain">
+
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome:" required>
+            <br>
+            <label for="telfone">Telefone: </label>
+            <input type="tel" telefone="telefone" id="telefone" placeholder="Insira o telefone" required>
+            <br>
+            <label for="assunto">Assunto: </label>
+            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+            <br>
+            <input type="reset" value="Resetar" id="limpar">
+            <input type="submit" value="Enviar" id="enviar">
+            <hr>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=tefiholzschuk@gmail.com&su=Contato+-+via+site+pessoal&body=Ol%C3%A1+Stephanie+Tudo+bem?&tf=cm">Prefere gmail?</a>
+
+
+
+        </form>
+
     </main>
 
     <footer>
         <hr>
     </footer>
 </body>
+
 </html>
